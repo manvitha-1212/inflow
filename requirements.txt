@@ -4,7 +4,7 @@ numpy
 
 pandas
 
-
-scikit_learn
+Image
+sklearn
 streamlit
 joblib
