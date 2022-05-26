@@ -17,7 +17,7 @@ from PIL import Image
 
 
 
-reload_model = joblib.load('/content/happiness_model')
+reload_model = joblib.load('happiness_model')
 
 GDP_per_capita= st.text_input('GDP_per_capita')
 Social_support = st.text_input('Social_support') 
