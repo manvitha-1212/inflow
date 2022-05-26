@@ -15,11 +15,11 @@ import numpy as np
 
 from PIL import Image
 
-def prediction(GDP_per_capita,Social_support, Healthy_life_expectancy,Freedom_to_make_life_choices,Generosity,Perceptions_of_corruption):  
-    prediction = regression.predict( [[GDP_per_capita,Social_support,Healthy_life_expectancy,Freedom_to_make_life_choices,Generosity,Perceptions_of_corruption]])
+
 
 reload_model = joblib.load('happiness_model')
-
+def prediction(GDP_per_capita,Social_support, Healthy_life_expectancy,Freedom_to_make_life_choices,Generosity,Perceptions_of_corruption):  
+    prediction = reload_model.predict( [[GDP_per_capita,Social_support,Healthy_life_expectancy,Freedom_to_make_life_choices,Generosity,Perceptions_of_corruption]])
 GDP_per_capita= st.text_input('GDP_per_capita')
 Social_support = st.text_input('Social_support') 
 Healthy_life_expectancy= st.text_input("Healthy_life_expectancy") 
