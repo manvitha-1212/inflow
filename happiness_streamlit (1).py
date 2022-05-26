@@ -18,7 +18,7 @@ from PIL import Image
 def prediction(GDP_per_capita,Social_support, Healthy_life_expectancy,Freedom_to_make_life_choices,Generosity,Perceptions_of_corruption):  
     prediction = classifier.predict( [[GDP_per_capita,Social_support,Healthy_life_expectancy,Freedom_to_make_life_choices,Generosity,Perceptions_of_corruption]])
 
-reload_model = joblib.load('/content/happiness_model')
+reload_model = joblib.load('happiness_model')
 
 def main():       
     # front end elements of the web page 
