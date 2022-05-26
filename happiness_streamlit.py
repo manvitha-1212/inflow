@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1dBAUMJufWB2DxrqhXQOXuKf_yiJbaTOz
 """
 
-
+pip install streamlit
 
 import streamlit as st 
 import joblib 
@@ -15,9 +15,10 @@ import numpy as np
 
 from PIL import Image
 
+image = Image.open('/content/download.jpg')
+st.image(image)
 
-
-reload_model = joblib.load('happiness_model')
+reload_model = joblib.load('/content/happiness_model')
 
 GDP_per_capita= st.text_input('GDP_per_capita')
 Social_support = st.text_input('Social_support') 
