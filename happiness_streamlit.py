@@ -15,8 +15,7 @@ import numpy as np
 
 from PIL import Image
 
-image = Image.open('/content/download.jpg')
-st.image(image)
+
 
 reload_model = joblib.load('/content/happiness_model')
 
